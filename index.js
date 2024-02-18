@@ -12,6 +12,8 @@ function getOnlineStatus() {
         var statusString;
         var players = document.getElementsByClassName("players")[0];
         players.textContent = (output.players.online)
+        var version = document.getElementsByClassName("version")[0];
+        version.textContent = (output.version)
         var online = document.getElementsByClassName("online")[0];
         if (output.online) {
           online.textContent = 'Online';
