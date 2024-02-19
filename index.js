@@ -34,7 +34,6 @@ function getOnlineStatus() {
 addEventListener('load', (event) => {
 
   getOnlineStatus();
-  document.title = 'New Title';
   const date1 = new Date();
   var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
   var amOrpm = document.getElementsByClassName("amOrpm")[0];
