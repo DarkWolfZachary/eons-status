@@ -34,18 +34,14 @@ function getOnlineStatus() {
 addEventListener('load', (event) => {
 
   getOnlineStatus();
-  const date1 = new Date();
-  var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
-  var amOrpm = document.getElementsByClassName("amOrpm")[0];
-  if (MinFromMidnight > 0) {
-    amOrpm.textContent = 'am';
-  } else {
-    amOrpm.textContent = 'pm';
-  }
-  var restartTime = document.getElementsByClassName("restartTime")[0];
-  restartTime.textContent = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
+const date1 = new Date();
+var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
+var amOrpm;
+if (MinFromMidnight > 0) {
+  amOrpm = 'am';
+} else {
+  amOrpm = 'pm';
 }
-);
 
 var time = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
 
