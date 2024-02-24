@@ -46,3 +46,15 @@ addEventListener('load', (event) => {
   restartTime.textContent = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
 }
 );
+
+var time = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
+
+var twelveHourTime
+if (time > 12 ){
+twelveHourTime = time - 12
+}else{
+twelveHourTime = time
+}
+
+var restartTime = document.getElementsByClassName("restartTime")[0];
+restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).';
