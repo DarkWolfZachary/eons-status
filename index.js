@@ -50,4 +50,4 @@ if (time > 12) {
 }
 
 var restartTime = document.getElementsByClassName("restartTime")[0];
-restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).'
+restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).';
