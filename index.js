@@ -41,7 +41,7 @@ addEventListener('load', (event) => {
     amOrpm = 'pm';
   }
 
-  var time = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
+  var time = ((7 * 60 - date1.getTimezoneOffset() + 13 * 60) / 60);
 
   var twelveHourTime
   if (time > 12) {
