@@ -33,7 +33,7 @@ function getOnlineStatus() {
 getOnlineStatus();
 addEventListener('load', (event) => {
   const date1 = new Date();
-  var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
+  var MinFromMidnight = 8 * 60 - date1.getTimezoneOffset();
   var amOrpm;
   if (MinFromMidnight > 0) {
     amOrpm = 'am';
@@ -41,7 +41,7 @@ addEventListener('load', (event) => {
     amOrpm = 'pm';
   }
 
-  var time = ((7 * 60 - date1.getTimezoneOffset() + 13 * 60) / 60);
+  var time = ((8 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
 
   var twelveHourTime
   if (time > 12) {
