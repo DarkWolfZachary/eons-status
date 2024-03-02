@@ -3,7 +3,7 @@ function getOnlineStatus() {
 
   request.open('GET', 'https://api.mcsrvstat.us/bedrock/3/51.81.150.31:19585', true);
   request.send(null);
-  request.onreadystatechange = function() {
+  request.onreadystatechange = function () {
     if (request.readyState === 4) {
 
       var type = request.getResponseHeader('Content-Type');
@@ -21,7 +21,7 @@ function getOnlineStatus() {
           motd.textContent = (output.map.clean.replace("§u", ''))
         } else {
           online.textContent = 'Offline';
-onlineOnly.classList.add("hidden");
+          onlineOnly.classList.add("hidden");
         }
         setTimeout(() => {
           getOnlineStatus()
@@ -31,23 +31,26 @@ onlineOnly.classList.add("hidden");
   }
 }
 getOnlineStatus();
-const date1 = new Date();
-var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
-var amOrpm;
-if (MinFromMidnight > 0) {
-  amOrpm = 'am';
-} else {
-  amOrpm = 'pm';
+addEventListener('load', (event) => {
+  const date1 = new Date();
+  var MinFromMidnight = 7 * 60 - date1.getTimezoneOffset();
+  var amOrpm;
+  if (MinFromMidnight > 0) {
+    amOrpm = 'am';
+  } else {
+    amOrpm = 'pm';
+  }
+
+  var time = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
+
+  var twelveHourTime
+  if (time > 12) {
+    twelveHourTime = time - 12
+  } else {
+    twelveHourTime = time
+  }
+
+  var restartTime = document.getElementsByClassName("restartTime")[0];
+  restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).'
 }
-
-var time = ((7 * 60 - date1.getTimezoneOffset() + 12 * 60) / 60);
-
-var twelveHourTime
-if (time > 12) {
-  twelveHourTime = time - 12
-} else {
-  twelveHourTime = time
-}
-
-var restartTime = document.getElementsByClassName("restartTime")[0];
-restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).';
+)
