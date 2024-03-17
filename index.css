@@ -30,6 +30,7 @@ h1 {
 /* The alert message box */
 .alert {
   width: auto;
+  white-space: nowrap;
   padding: 20px;
   background-color: #f44336; /* Red */
   color: white;
