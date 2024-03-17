@@ -48,7 +48,6 @@ h1 {
   transition: 0.3s;
 }
 
-/* When moving the mouse over the close button */
 .closebtn:hover {
   color: black;
 }
@@ -56,3 +55,15 @@ h1 {
 .hidden {
   display: None;
 }
+
+.button{
+  float: right;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  }
+  
+  button:hover {
+    background-color: lightgray;
+  }
+  
