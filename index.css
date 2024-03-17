@@ -29,7 +29,7 @@ h1 {
 
 /* The alert message box */
 .alert {
-  width: 100%;
+  width: auto;
   padding: 20px;
   background-color: #f44336; /* Red */
   color: white;
@@ -39,7 +39,6 @@ h1 {
 
 /* The close button */
 .closebtn {
-  
   margin-left: 15px;
   color: white;
   font-weight: bold;
