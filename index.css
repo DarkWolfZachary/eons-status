@@ -31,7 +31,7 @@ h1 {
 .alert {
   display: flex;
   align-items: center;
-  float: none
+  float: none;
   width: fit-content;
   padding: 20px;
   background-color: #f44336; /* Red */
