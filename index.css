@@ -38,6 +38,7 @@ h1 {
 
 /* The close button */
 .closebtn {
+  width: fit-content;
   margin-left: 15px;
   color: white;
   font-weight: bold;
@@ -46,7 +47,6 @@ h1 {
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
-  width: fit-content
 }
 
 .closebtn:hover {
