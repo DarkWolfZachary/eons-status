@@ -1,5 +1,6 @@
-div {
+.title {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
+    padding-bottom: 5px;
 }
