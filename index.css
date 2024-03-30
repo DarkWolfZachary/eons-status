@@ -18,7 +18,7 @@ h1 {
   text-align: center;
 }
 
- .small {
+.small {
   color: #111;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 15px;
@@ -27,16 +27,15 @@ h1 {
   text-align: center;
 }
 
-/* The alert message box */
 .alert {
   padding: 20px;
-  background-color: #f44336; /* Red */
+  background-color: #f44336;
+  /* Red */
   color: white;
   margin-bottom: 15px;
   margin-top: 10px;
 }
 
-/* The close button */
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -56,13 +55,58 @@ h1 {
   display: None;
 }
 
-.button{
-  float: right;
+.button {
+  position: absolute;
+  top: 11px;
+  right: 50;
   border: 2px solid black;
   border-radius: 6px;
   background-color: white;
-  }
-  
-  button:hover {
-    background-color: lightgray;
-  }
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 10;
+}
+
+.dark .lightModeButton {
+  display: inline;
+  border-width: 0;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.dark .darkModeButton {
+  display: none;
+}
+
+.dark {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light .lightModeButton {
+  display: none;
+}
+
+.light .darkModeButton {
+  border-width: 0;
+  background-color: #ffffff;
+}
+
+.dark div span{
+  color: white;
+}
+
+.dark h1 {
+  color: white;
+}

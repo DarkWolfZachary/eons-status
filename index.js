@@ -52,5 +52,19 @@ addEventListener('load', (event) => {
 
   var restartTime = document.getElementsByClassName("restartTime")[0];
   restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).'
+  
+  const darkMode = document.querySelectorAll('.darkModeButton');
+darkMode[0].addEventListener('click', function(event) {
+  const body = document.querySelectorAll('body');
+  body[0].classList.add("dark");
+  body[0].classList.remove("light");
+});
+
+const lightMode = document.querySelectorAll('.lightModeButton');
+lightMode[0].addEventListener('click', function(event) {
+  const body = document.querySelectorAll('body');
+  body[0].classList.remove("dark");
+  body[0].classList.add("light");
+});
 }
 )
