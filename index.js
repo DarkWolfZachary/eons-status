@@ -69,6 +69,7 @@ addEventListener('load', (event) => {
   if (isDarkMode) {
     setDarkMode()
   }
+  
   const darkModeButton = document.querySelectorAll('.darkModeButton');
   darkModeButton[0].addEventListener('click', function (event) {
     setDarkMode()
