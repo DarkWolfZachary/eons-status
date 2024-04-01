@@ -31,6 +31,18 @@ function getOnlineStatus() {
   }
 }
 getOnlineStatus();
+
+function setDarkMode() {
+  const body = document.querySelectorAll('body');
+  body[0].classList.add("dark");
+  body[0].classList.remove("light");
+}
+
+function setLightMode() {
+  const body = document.querySelectorAll('body');
+  body[0].classList.add("light");
+  body[0].classList.remove("dark");
+}
 addEventListener('load', (event) => {
   const date1 = new Date();
   var MinFromMidnight = 8 * 60 - date1.getTimezoneOffset();
@@ -52,19 +64,21 @@ addEventListener('load', (event) => {
 
   var restartTime = document.getElementsByClassName("restartTime")[0];
   restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).'
-  
-  const darkMode = document.querySelectorAll('.darkModeButton');
-darkMode[0].addEventListener('click', function(event) {
-  const body = document.querySelectorAll('body');
-  body[0].classList.add("dark");
-  body[0].classList.remove("light");
-});
 
-const lightMode = document.querySelectorAll('.lightModeButton');
-lightMode[0].addEventListener('click', function(event) {
-  const body = document.querySelectorAll('body');
-  body[0].classList.remove("dark");
-  body[0].classList.add("light");
-});
+  const isDarkMode = localStorage.getItem("theme") === "dark"
+  if (isDarkMode) {
+    setDarkMode()
+  }
+  const darkModeButton = document.querySelectorAll('.darkModeButton');
+  darkModeButton[0].addEventListener('click', function (event) {
+    setDarkMode()
+    localStorage.setItem("theme", "dark")
+  });
+
+  const lightModeButton = document.querySelectorAll('.lightModeButton');
+  lightModeButton[0].addEventListener('click', function (event) {
+    setLightMode()
+    localStorage.setItem("theme", "light")
+  });
 }
 )
