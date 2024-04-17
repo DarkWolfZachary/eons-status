@@ -65,11 +65,13 @@ addEventListener('load', (event) => {
   var restartTime = document.getElementsByClassName("restartTime")[0];
   restartTime.textContent = '' + twelveHourTime + amOrpm + ' (local time).'
 
-  const isDarkMode = localStorage.getItem("theme") === "dark"
-  if (isDarkMode) {
+  const isLightMode = localStorage.getItem("theme") === "light"
+  if (isLightMode) {
+    setLightMode()
+  }else{
     setDarkMode()
   }
-  
+
   const darkModeButton = document.querySelectorAll('.darkModeButton');
   darkModeButton[0].addEventListener('click', function (event) {
     setDarkMode()
