@@ -1,142 +1,27 @@
-div {
-  color: #111;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 1;
-  text-align: center;
-}
-
-h1 {
-  color: #111;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: -1px;
-  line-height: 1;
-  text-align: center;
-}
-
-.small {
-  color: #111;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  letter-spacing: -1px;
-  line-height: 1;
-  text-align: center;
-}
-
-.alert {
-  padding: 20px;
-  background-color: #f44336;
-  /* Red */
-  color: white;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtn:hover {
-  color: black;
-}
-
-.hidden {
-  display: None;
-}
-
-.login {
-  position: absolute;
-  top: 11px;
-  right: 50px;
-  border-radius: 6px;
-}
-
-.dark .login{
-  border: 2px solid white;
-  background-color: #1f1f1f;
-  color: white;
-}
-
-.light .login{
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-}
-
-button:hover {
-  background-color: lightgray;
-}
-
-.material-symbols-outlined {
-  position: absolute;
-  right: 10px;
-}
-
-.dark .lightModeButton {
-  display: inline;
-  border-width: 0;
-  background-color: #1f1f1f;
-  color: #ffffff;
-  top: 8px;
-}
-
-.dark .darkModeButton {
-  display: none;
-}
-
 .dark {
-  background-color: #1f1f1f;
-  color: #ffffff;
+    background-color: #1f1f1f
 }
 
-.light {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.light .lightModeButton {
-  display: none;
-}
-
-.light .darkModeButton {
-  border-width: 0;
-  background-color: #ffffff;
-  top: 8px;
-}
-
-.dark div span {
-  color: white;
-}
-
-.dark h1 {
-  color: white;
-}
-
-footer {
+h1{
 text-align: center;
-bottom: 0%;
-position: fixed;
-width: 100%;
-left: 0px;
+color: white;
 font-family: Arial, Helvetica, sans-serif;
-font-size: smaller;
 }
 
-a{
-  color: white;
-}
+#eonsProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+#eonsBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+  }
 
-.light a{
-  color: black;
-}
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+  }
