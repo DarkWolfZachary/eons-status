@@ -81,7 +81,7 @@ h1 {
 
 .dark .login{
   border: 2px solid white;
-  background-color: #1f1f1f;
+  background-color: #191919;
   color: white;
 }
 
@@ -103,7 +103,7 @@ button:hover {
 .dark .lightModeButton {
   display: inline;
   border-width: 0;
-  background-color: #1f1f1f;
+  background-color: #191919;
   color: #ffffff;
   top: 8px;
   cursor: pointer;
