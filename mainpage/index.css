@@ -71,22 +71,38 @@ h1 {
   display: None;
 }
 
-.login {
-  position: absolute;
-  top: 11px;
-  right: 50px;
-  border-radius: 6px;
+.shop {
+  float: right;
+  margin-right: 10px;
+  height: 100%;
   cursor: pointer;
+  border-style: none;
+}
+
+.dark .shop{
+  background-color: #191919;
+  color: white;
+}
+
+.light .shop{
+  background-color: white;
+  color: black;
+}
+
+.login {
+  float: right;
+  margin-right: 50px;
+  height: 100%;
+  cursor: pointer;
+  border-style: none;
 }
 
 .dark .login{
-  border: 2px solid white;
   background-color: #191919;
   color: white;
 }
 
 .light .login{
-  border: 2px solid black;
   background-color: white;
   color: black;
 }
