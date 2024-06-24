@@ -67,3 +67,20 @@ color: black;
 .dark a {
     color: white;
 }
+
+.arrow{
+    border-width: 0;
+    top: 10px;
+    cursor: pointer;
+    left: 10px;
+  }
+
+.dark .arrow{
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+
+.light .arrow{
+    background-color: #ffffff;
+    color: #000000;
+}

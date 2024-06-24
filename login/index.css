@@ -7,7 +7,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     padding-bottom: 5px;
-    color: red
 }
 
 .dark .title {
@@ -27,8 +26,8 @@
 }
 
 input {
-border-radius: 4px;
-border-style: solid;    
+    border-radius: 4px;
+    border-style: solid;
 }
 
 .dark input {
@@ -39,5 +38,22 @@ border-style: solid;
 }
 
 .dark ::placeholder {
-    color:white;
+    color: white;
+}
+
+.arrow {
+    border-width: 0;
+    top: 10px;
+    cursor: pointer;
+    left: 10px;
+}
+
+.dark .arrow {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.light .arrow {
+    background-color: #ffffff;
+    color: #000000;
 }
