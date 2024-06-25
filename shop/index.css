@@ -1,0 +1,48 @@
+.dark {
+    background-color: #1f1f1f;
+}
+
+h1{
+    text-align: center;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 70px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.dark h1{
+    color:white
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.item{
+    display: inline-block;
+    margin: 5px;
+}
+
+.dark .item{
+color: white;
+}
+
+.arrow {
+    border-width: 0;
+    top: 10px;
+    cursor: pointer;
+    left: 10px;
+}
+
+.dark .arrow {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.light .arrow {
+    background-color: #ffffff;
+    color: #000000;
+}
