@@ -2,7 +2,7 @@
     background-color: #1f1f1f;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'MinecraftiaRegular';
     font-weight: normal;
@@ -12,22 +12,29 @@ h1{
     margin-bottom: 20px;
 }
 
-.dark h1{
-    color:white
+.dark h1 {
+    color: white
 }
 
-img{
+img {
     width: 250px;
     height: 250px;
+    image-rendering: pixelated;
 }
 
-.item{
-    display: inline-block;
+.itemContainer {
+    display:inline-block;
+}
+
+.item {
     margin: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.dark .item{
-color: white;
+.dark .item {
+    color: white;
 }
 
 .arrow {
