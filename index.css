@@ -71,7 +71,7 @@ h1 {
   display: None;
 }
 
-.shop {
+.link {
   float: right;
   margin-right: 10px;
   height: 100%;
@@ -79,12 +79,12 @@ h1 {
   border-style: none;
 }
 
-.dark .shop{
+.dark .link{
   background-color: #191919;
   color: white;
 }
 
-.light .shop{
+.light .link{
   background-color: white;
   color: black;
 }
