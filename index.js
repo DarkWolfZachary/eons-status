@@ -1,7 +1,7 @@
 function getOnlineStatus() {
   var request = new XMLHttpRequest();
 
-  request.open('GET', 'https://api.mcsrvstat.us/bedrock/3/51.81.150.31:19585', true);
+  request.open('GET', 'https://api.mcsrvstat.us/bedrock/3/204.152.220.44:19245', true);
   request.send(null);
   request.onreadystatechange = function () {
     if (request.readyState === 4) {

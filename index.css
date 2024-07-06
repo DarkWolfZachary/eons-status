@@ -185,37 +185,3 @@ a{
   background-color: #ffffff;
   box-shadow: 0px 10px 10px #0303031f;
 }
-
-/* Delete After Release */
-#eonsProgress {
-  width: 100%;
-  background-color: grey;
-}
-
-#eonsBar {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 95%;
-  height: 30px;
-  background-color: #04AA6D;
-  text-align: center;
-  line-height: 30px;
-  margin-top: 0;
-  color: white
-}
-
-h2{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  }
-
-  h2 .dark {
-    color: white;
-  }
-
-  h2 .light {
-color: black;
-  }
-
-/* Delete After Release */
